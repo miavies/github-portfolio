@@ -142,7 +142,7 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5{
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6{
     overflow: hidden;
     display: none;
     width:  500px;
@@ -226,7 +226,10 @@ nav ul li a:hover::after{
     top: 0px;
     right: 0px;
 }
-
+.mySlides6:hover .card-body{
+    top: 0px;
+    right: 0px;
+}
 .upbtn{
     color: white;
     background: #F08221;
