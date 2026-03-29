@@ -529,3 +529,33 @@ form input, form textarea{
     }
         
 }
+
+
+
+/*games*/
+.gameinformation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 8%;
+}
+
+.gameplayimages-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;   
+    align-items: right;      
+    justify-content: flex-start;  
+    gap: 15px;    
+    max-height: 900px;
+    overflow-y: auto;            
+}
+
+.gameplayimages img {
+    width: 80%;  
+    height: auto;
+}
+
+.aboutthegame-container {
+    width: 45%;
+}
