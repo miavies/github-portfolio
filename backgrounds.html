@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucidly Cloudy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="gallerycontainer">
+        <br>
+        <br>
+        <h1 class="galleryTitle">Backgrounds</h1>
+        <br>
+        <div class="galleryimage-container">
+            <div class="galleryimage"><img src="ImageLiyue.jpg"></div>
+            <div class="galleryimage"><img src="ImageSakura.png"></div>
+            <div class="galleryimage"><img src="ImageStarTrail.png"></div>
+            <div class="galleryimage"><img src="ImageVietnam.png"></div>
+        </div>
+        
+        <div class="returntoWorks">
+            <a href="index.html#works"><p><i class="fas fa-arrow-left"></i> Return to Works</p></a>
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="ImageSakura.png">
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.galleryimage-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+       });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
+
+</body>
+</html>

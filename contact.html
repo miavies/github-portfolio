@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucidly Cloudy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Header-->
+    <div class="headerbackgroundAbout"></div>
+    <div class="headercontainerAbout">
+        <div class="header">
+            <nav>
+                <a href="index.html"><img class="logo" src="ImageLogo.png"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#works">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Contact-->
+        <div class="contactcontainer">
+            <div class="contactrow">
+                <div class="contact-left">
+                    <h1 class="contactmetitle">Contact Me</h1>
+                    <br>
+                    <p><i class="far fa-envelope"></i> michaelasantiago25@gmail.com</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@lucidly_cloudy"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/lucidly_cloudy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/lucidly_cloudy"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <br>
+                    <a href="SantiagoResume.pdf" download><button class="about-btn">Download CV</button></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="about-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>            
+        </div>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw84-altZOAwcdRcRcQWiONFBx1Z3ZX7SlaLG_FwyudDHnXnkcB0sOAN3ytgWbQBIMH/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+
+        </script>
+</body>
+</html>

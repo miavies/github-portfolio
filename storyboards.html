@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucidly Cloudy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="gallerycontainer">
+        <br>
+        <br>
+        <h1 class="galleryTitle">Storyboards, Comics, Scripts, Animatics</h1>
+        <br>
+        <div class="galleryimage-container">
+            <div class="galleryimage"><video width="100%" height="100%" controls><source src="VideoAlbedoandKlee.mp4"></video></div>
+            <div class="galleryimage"><video width="100%" height="100%" controls><source src="VIdeoXingquiandChongyun.mp4"></video></div>
+            <div class="galleryimage"><object data="CReddit-Script.pdf" type="application/pdf" width="100%" height="500px"></object></div>
+        </div>
+        
+        <div class="returntoWorks">
+            <a href="index.html#works"><p><i class="fas fa-arrow-left"></i> Return to Works</p></a>
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="VideoAlbedoandKlee.mp4">
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.galleryimage-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+       });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,528 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+/*Smooth Scrolling upon clicking 'Work'*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Fade In Effect*/
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 100%;    }
+  } 
+
+ /*For all Images*/
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+#home{
+    color: none;
+}
+
+/*--Header--*/
+.headerbackground{
+    animation: fadeIn 5s;
+    width: 100%;
+    height: 100vh;
+    background-image: url(ImageMagic.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-attachment: fixed;
+}
+
+.headercontainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header{
+    animation: fadeIn 1s;
+    width: 100%;
+    height: 100px;
+}
+
+.logo{
+    padding: 10px 10px 10px 150px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+/*Navigation Format*/
+nav{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position:relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;   
+    background: #F08221;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%
+}
+
+/*Header Quote*/
+.headerquote {
+    animation: fadeIn 3s;
+    padding: 200px 0px 100px 200px;
+    font-size: 60px;
+    font-style:italic;  
+    color: #fff;
+    position: relative;
+}
+
+
+
+
+
+/*Works*/
+#works{ 
+    background-image: linear-gradient(#03000f, #02123a,#00356d, #0286bc, #3dd2ee, #a5f5ff);   
+    width: 100%;
+    height: 100hv;
+    text-align: center;
+    position: absolute;
+}
+
+.worksmaintitle{
+    padding: 0px 50px 80px 50px;
+}
+
+/*Slideshow*/
+.workscontainer{
+    justify-content: center;    
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.slideshow-container {
+    padding: 30px;
+    position: relative;
+}
+
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5{
+    overflow: hidden;
+    display: none;
+    width:  500px;
+    height: 281.25px;
+    position: relative;
+}
+
+/*Slideshow Button*/
+.prev, .next {
+    cursor:pointer;
+    width: auto;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+    user-select: none;
+    outline: none;
+  }
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+  color: #F08221;
+}
+
+/*Card Pop-up*/
+.card-body{
+    width:  500px;
+    height: 281.25px;
+    position: absolute;
+    top:330px;
+    right:0px;
+    background: #f082218a;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    transition: 0.7s;
+}
+
+.worksTitle{
+   padding: 25% 0% 3% 0%;
+}
+
+.card-btn{
+    color: black;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.card-btn:hover{
+    color: white;
+    background: rgb(73, 132, 209);
+}
+
+.mySlides1:hover .card-body{
+    top: 0px;
+    right: 0px;
+}
+.mySlides2:hover .card-body{
+    top: 0px;
+    right: 0px;
+}
+.mySlides3:hover .card-body{
+    top: 0px;
+    right: 0px;
+}
+.mySlides4:hover .card-body{
+    top: 0px;
+    right: 0px;
+}
+.mySlides5:hover .card-body{
+    top: 0px;
+    right: 0px;
+}
+
+.upbtn{
+    color: white;
+    background: #F08221;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+.upbtn:hover{
+    color: #F08221;
+    background: white;
+}
+
+
+
+/*About Me*/
+.headerbackgroundAbout{
+    background-image: linear-gradient(#2E5894, #5175A7, #7392BA, #96AFCD, #B8CCE0, #DBE9F3);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.headercontainerAbout{ 
+    width: 100%; 
+    height: 100hv;
+}
+
+.aboutcontainer{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    padding: 80px 0px 0px 0px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    position: relative;
+}
+
+.mypicturecontainer{
+    animation: fadeIn 2s;
+    background-color:'';
+    width: 523px;
+    height: 700px;
+    object-fit: contain;
+}
+
+.aboutmecontainer{
+    animation: fadeIn 5s;
+    padding: 20px;
+    width: 523px;
+    height: 700x;
+    position: relative;
+}
+
+.aboutmetitle{
+    padding: 0px 50px 10px 50px;
+    font-size: 45px;
+}
+
+.aboutmetext{
+    padding: 0px 50px 0px 50px;
+    font-size: 20px;
+}
+
+.otherinfotitle{
+    padding: 0px 50px 0px 50px;
+    font-size: 45px;
+}
+
+.otherinfocontainer{
+    padding: 0px 50px 80px 70px;
+    width: 520px;
+    height: 100px;
+}
+
+.otherinfotext{
+    font-size: 20px;
+}
+
+
+
+
+
+/*Contact*/
+.contactcontainer{
+    animation: fadeIn 2s;
+    width: 100%;
+    height: 100px;
+}
+
+.contactrow{
+    padding: 100px;
+    display: flex;
+    justify-content:center;
+    position: relative;
+}
+
+/*Contact Left Side*/
+.contact-left{
+    flex-basis: 25%;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.contactmetitle{
+    font-size: 45px;
+}
+
+.contactleft p{
+    flex-basis: 30px;
+}
+
+.contactleft p i{
+    color:white;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.socialicons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #F08221;
+    transform: translateY(-5px);
+    
+}
+
+.about-btn{
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.about-btn:hover{
+    color: white;
+    background: #F08221;
+}
+
+/*Contact Right Side*/
+.contact-right{
+    flex-basis: -75%;
+    padding: 20px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+#msg{
+    color: white;
+    margin-top: 10px;
+    display: block;
+}
+
+/*Copyright*/
+.copyright{
+    position: absolute;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+/*Gallery*/
+.gallerycontainer{
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(#2E5894, #5175A7, #7392BA, #96AFCD, #B8CCE0, #DBE9F3);
+}
+
+.galleryTitle{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 15px;
+    color: white;   
+    text-align: center;
+    font-weight: 600;
+}
+
+.gallerycontainer .galleryimage-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallerycontainer .galleryimage-container .galleryimage{
+    height: 300px;
+    width: 400px;
+    border: 10px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallerycontainer .galleryimage-container .galleryimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallerycontainer .galleryimage-container .galleryimage:hover img{
+    transform: scale(1.2);
+}
+
+/*Button to Return to Works*/
+.returntoWorks a{
+    text-decoration: none;
+}
+
+.returntoWorks p{
+    padding: 50px;
+    font-size: 20px;
+    color:black;
+}
+
+.returntoWorks:hover p{
+    color: #F08221;
+}
+
+/*popup*/
+.gallerycontainer .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;    
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none; 
+}
+
+.gallerycontainer .popup-image span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gallerycontainer .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 800px;
+    object-fit: contain; 
+}
+
+@media (max-width:768px) {
+    .gallerycontainer .popup-image img{
+        width: 95%;
+    }
+        
+}
