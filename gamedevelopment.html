@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucidly Cloudy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Header-->   
+        <div class="header">
+            <nav>
+                <a href="index.html"><img class="logo" src="ImageLogo.png"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gamedevelopment.html">Game Developement</a></li>
+                    <li><a href="index.html#works">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <div class="gallerycontainer">
+        <br>
+        <br>
+        <div class = "workintroduction">
+            <h2>I love playing games, but I love developing them even more! I am creative and technically skilled with practical experience in Unity, C# scripting, asset integration, and QA debugging.</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class = "gameinformation">
+           <div class="gameplaycarousel">
+                <button class="carousel-btn left" onclick="moveSlide(this, -1)">❮</button>
+                <div class="carousel-track">
+                    <img src="TusokAtTiyaga_Cooking.gif">
+                    <img src="TusokAtTiyaga_Menu.gif">
+                    <img src="TusokAtTiyaga_Ingredients.gif">
+                    <img src="TusokAtTiyaga_PayDebt.gif">
+                    <img src="TusokAtTiyaga_Fail.gif">
+                </div>
+                <button class="carousel-btn right" onclick="moveSlide(this, 1)">❯</button>
+                <div class="carousel-thumbs">
+                    <img src="TusokAtTiyaga_Cooking.gif" onclick="jumpToSlide(this, 0)">
+                    <img src="TusokAtTiyaga_Menu.gif" onclick="jumpToSlide(this, 1)">
+                    <img src="TusokAtTiyaga_Ingredients.gif" onclick="jumpToSlide(this, 2)">
+                    <img src="TusokAtTiyaga_PayDebt.gif" onclick="jumpToSlide(this, 3)">
+                    <img src="TusokAtTiyaga_Fail.gif" onclick="jumpToSlide(this, 4)">
+                </div>
+            </div>
+            <div class="aboutthegame-container">
+                <h1 class="gameTitle">Tusok at Tiyaga</h1>
+                <br>
+                <h3>About the game</h3>
+                <p>A street food cooking simulator where the player experiences the hardships of being the sole breadwinner of the family. At the end of each week, the player is harassed by a loanshark to pay their debt or else... Unlock all classic Filipino street food and work you way out of debt!</p>
+                <br>
+                <h3>My role and contributions</h3>
+                <p>I programmed this game solo and also created all of the animations used. I also contributed to its main story concept and also came up with the game mechanics.</p>
+                <br>
+                <a href="https://deepfriedproduction.itch.io/tusok-at-tiyaga"><button class="card-btn">Play the Game</button></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = "gameinformation">
+            <div class="gameplaycarousel">
+                <button class="carousel-btn left" onclick="moveSlide(this, -1)">❮</button>
+                <div class="carousel-track">
+                    <img src="DeepSpaceTavern_MaxTray.gif">
+                    <img src="DeepSpaceTavern_Cooking.gif">
+                    <img src="DeepSpaceTavern_Serving.gif">
+                    <img src="DeepSpaceTavern_Shop.gif">
+                </div>
+                <button class="carousel-btn right" onclick="moveSlide(this, 1)">❯</button>
+                <div class="carousel-thumbs">
+                    <img src="DeepSpaceTavern_MaxTray.gif" onclick="jumpToSlide(this, 0)">
+                    <img src="DeepSpaceTavern_Cooking.gif" onclick="jumpToSlide(this, 1)">
+                    <img src="DeepSpaceTavern_Serving.gif" onclick="jumpToSlide(this, 2)">
+                    <img src="DeepSpaceTavern_Shop.gif" onclick="jumpToSlide(this, 3)">
+                </div>
+            </div>
+            <div class="aboutthegame-container">
+                <h1 class="gameTitle">Deep Space Tavern</h1>
+                <br>
+                <h3>About the game</h3>
+                <p>A fun mix of futuristic 2D cooking with medieval 3D customer serving all-in-one. Expand the restuarant and remain open for as long as you can!</p>
+                <br>
+                <h3>My role and contributions</h3>
+                <p>I programmed the AI for the NPCs which includes the queuing logic, idling, finding a seat, ordering the food, emotions based on customer service, and many more. I also contributed to building the main game mechanics and story and environmental concept of the game. I also created the sky and poof VFX. Additionally, I created a few of the animations, both for UI and also the NPCs. Finally, I integrated all sciprts and ensured that that all worked correctly together.</p>
+                <br>
+                <a href="https://spacemonkeys.itch.io/deep-space-tavern"><button class="card-btn">Play the Game</button></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = "gameinformation">
+            <div class="gameplaycarousel">
+                <button class="carousel-btn left" onclick="moveSlide(this, -1)">❮</button>
+                <div class="carousel-track">
+                    <img src="AI_Mage.gif">
+                    <img src="AI_Ranger.gif">
+                    <img src="AI_BattleSim.gif">
+                </div>
+                <button class="carousel-btn right" onclick="moveSlide(this, 1)">❯</button>
+                <div class="carousel-thumbs">
+                    <img src="AI_Mage.gif" onclick="jumpToSlide(this, 0)">
+                    <img src="AI_Ranger.gif" onclick="jumpToSlide(this, 1)">
+                    <img src="AI_BattleSim.gif" onclick="jumpToSlide(this, 2)">
+                </div>
+            </div>
+            <div class="aboutthegame-container">
+                <h1 class="gameTitle">AI Battle Sim</h1>
+                <br>
+                <h3>About the system</h3>
+                <p>Features character artificial intelligence; from spawing, to finding enemies (until none are left), to fighting enemies using attack combos, to reaching the goal.</p>
+                <br>
+                <h3>My role and contributions</h3>
+                <p>This is a solo project for coding AI logic, practicing the use of NavMesh components, implementing unique character animations, and a bit of environmental designing.</p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = "gameinformation">
+            <div class="gameplaycarousel">
+                <button class="carousel-btn left" onclick="moveSlide(this, -1)">❮</button>
+                <div class="carousel-track">
+                    <img src="StoneWall_Home.gif">
+                    <img src="StoneWall_Bullets.gif">
+                    <img src="StoneWall_DefenseUp.gif">
+                    <img src="StoneWall_GameOver.gif">
+                </div>
+                <button class="carousel-btn right" onclick="moveSlide(this, 1)">❯</button>
+                <div class="carousel-thumbs">
+                    <img src="StoneWall_Home.gif" onclick="jumpToSlide(this, 0)">
+                    <img src="StoneWall_Bullets.gif" onclick="jumpToSlide(this, 1)">
+                    <img src="StoneWall_DefenseUp.gif" onclick="jumpToSlide(this, 2)">
+                    <img src="StoneWall_GameOver.gif" onclick="jumpToSlide(this, 3)">
+                </div>
+            </div>
+            <div class="aboutthegame-container">
+                <h1 class="gameTitle">STONEWALL</h1>
+                <br>
+                <h3>About the system</h3>
+                <p>A hypercasual endless tower defense game. The cards give random boosts! It is up to the player to choose which cards will lead to victory!</p>
+                <br>
+                <h3>My role and contributions</h3>
+                <p>This is a solo game project where I applied various mathematical functions to manage the stats of both the wall and the enemies as they level up over time. Additional work that I have done in this project include coding the animation of the wall and cards using DOTween and splines, designing the card faces, and managing the UI interactions. (Please ignore the 2x2 photo ID as this was just a fun little detail my class decided to add for our unsuspecting professor)</p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <script>
+        function moveSlide(button, direction) {
+            const carousel = button.parentElement;
+            const track = carousel.querySelector('.carousel-track');
+            const images = track.querySelectorAll('img');
+
+            let index = parseInt(carousel.dataset.index || 0);
+
+            index += direction;
+
+            if (index < 0) index = images.length - 1;
+            if (index >= images.length) index = 0;
+
+            setSlide(carousel, index);
+        }
+
+        function jumpToSlide(thumb, index) {
+            const carousel = thumb.closest('.gameplaycarousel');
+            setSlide(carousel, index);
+        }
+
+        function setSlide(carousel, index) {
+            const track = carousel.querySelector('.carousel-track');
+            const images = track.querySelectorAll('img');
+            const thumbs = carousel.querySelectorAll('.carousel-thumbs img');
+
+            carousel.dataset.index = index;
+
+            track.style.transform = `translateX(${-index * 100}%)`;
+
+            thumbs.forEach((t, i) => {
+                t.classList.toggle("active", i === index);
+            });
+
+            // auto-scroll thumbnail into center view
+            if (thumbs[index]) {
+                thumbs[index].scrollIntoView({
+                    behavior: "smooth",
+                    inline: "center",
+                    block: "nearest"
+                });
+            }
+        }
+    </script>
+
+
+</body>
+</html>
