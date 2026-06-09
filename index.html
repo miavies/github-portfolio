@@ -18,20 +18,58 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="gamedevelopment.html">Game Developement</a></li>
-                    <li><a href="#works">Other Works</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#works">All Works</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
-        <p class="headerquote">head in the clouds,<br>lucidly dreaming</p>
+        <div class = "headerquotecontainer">
+            <p class="headerquote">head in the clouds,<br>lucidly dreaming</p>
+            <a href="gamedevelopment.html"><button class = "portfolio-btn"> View my portfolio</button></a>
+        </div>    
     </div>
 
+    <!--About-->
+    <div class="aboutcontainer">   
+        <!--Left side-->
+        <div class="mypicturecontainer">
+            <img id="meImg" src="ImageMe.jpg"
+                onmouseover="this.src='ImageMe2.jpeg'"
+                onmouseout="this.src='ImageMe.jpg'">
+        </div> 
+
+         <!--Right Side-->
+        <div class="aboutmecontainer">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="aboutmetitle">Meet the Game Developer!</h1>
+            <p class="aboutmetext">Hi! I'm Mica Santiago. A filipino game developer who particularly loves game programming. Bringing awesome and interesting game mechanics, character AI, and UI interactions to life just gives this certain excitement and fullfillment; I can't get enough of it!</p> 
+            <br>
+            <br>
+            <br>
+            <h1 class="otherinfotitle">Other things I love:</h1>
+            <br>
+            <div class="otherinfocontainer">
+                 <ul>
+                    <li><p class="otherinfotext">Playing the violin</p></li>
+                    <li><p class="otherinfotext">Story-based games</p></li>
+                    <li><p class="otherinfotext">Cats</p></li>
+                    <li><p class="otherinfotext">Fantasy books and webnovels</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
     <!--Works-->
-    <div id="works">
-        <br>
-        <br>
-        <br>   
+    <div id="works">  
         <h1 class="worksmaintitle">Works</h1> 
         <div class="workscontainer">
             <!--Games-->
@@ -39,22 +77,22 @@
                 <div class="mySlides1">
                     <img src="ImageTusokatTiyaga.png">
                     <div class="card-body">
-                        <h1 class="worksTitle">Games</h1>
+                        <h1 class="worksTitle">Game Developement</h1>
                         <a href="gamedevelopment.html"><button class = "card-btn"> see more</button></a>
                     </div>
                 </div>
                 <div class="mySlides1">
-                    <img src="ImageMaskARaid.png">
+                    <img src="ImageStoneWall.png">
                     <div class="card-body">
-                        <h1 class="worksTitle">Games</h1>
-                        <a href="games.html"><button class = "card-btn"> see more</button></a>
+                        <h1 class="worksTitle">Game Developement</h1>
+                        <a href="gamedevelopment.html"><button class = "card-btn"> see more</button></a>
                     </div>
                 </div>
                 <div class="mySlides1">
                     <img src="ImageDeepSpaceTavern.png">
                     <div class="card-body">
-                        <h1 class="worksTitle">Games</h1>
-                        <a href="games.html"><button class = "card-btn"> see more</button></a>
+                        <h1 class="worksTitle">Game Developement</h1>
+                        <a href="gamedevelopment.html"><button class = "card-btn"> see more</button></a>
                     </div>
                 </div>
                 <a class="prev" onclick="plusSlides(-1, 0, this)">&#10094;</a>
@@ -203,7 +241,7 @@
 
         <!--Copyright-->
         <div class="copyright">
-            <p>Copyright © Lucidly Cloudy. Made with blood, sweat, and tears.</p>
+            <p>Copyright © Michaela Vivienne Santiago. Made with blood, sweat, and tears.</p>
         </div>
 
     </div> 

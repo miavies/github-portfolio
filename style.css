@@ -104,13 +104,33 @@ nav ul li a:hover::after{
 }
 
 /*Header Quote*/
+.headerquotecontainer{
+    padding: 200px;
+}
+
 .headerquote {
     animation: fadeIn 3s;
-    padding: 200px 0px 100px 200px;
+    padding: 0px 0px 50px 0px;
     font-size: 60px;
     font-style:italic;  
     color: #fff;
     position: relative;
+}
+.portfolio-btn{
+    color: white;
+    background: #F08221;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.portfolio-btn:hover{
+    color: black;
+    background: white;
 }
 
 
@@ -121,7 +141,8 @@ nav ul li a:hover::after{
 
 .workintroduction {
     display: flex;
-    justify-content: center;   /* centers horizontally */
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
@@ -141,7 +162,8 @@ nav ul li a:hover::after{
 }
 
 .worksmaintitle{
-    padding: 0px 50px 80px 50px;
+    padding: 100px 50px 50px 50px;
+    font-size: 45px;
 }
 
 /*Slideshow*/
@@ -315,6 +337,7 @@ nav ul li a:hover::after{
 .aboutmetext{
     padding: 0px 50px 0px 50px;
     font-size: 20px;
+    text-align: justify;
 }
 
 .otherinfotitle{
@@ -451,7 +474,7 @@ form input, form textarea{
 .gallerycontainer{
     position: relative;
     min-height: 100vh;
-    background-image: linear-gradient(#2E5894, #5175A7, #7392BA, #96AFCD, #B8CCE0, #DBE9F3);
+    background-image: linear-gradient(#2E5894, #5175A7, #7392BA); */
 }
 
 .galleryTitle{
@@ -474,7 +497,6 @@ form input, form textarea{
 .gallerycontainer .galleryimage-container .galleryimage{
     height: 300px;
     width: 400px;
-    border: 10px solid white;
     box-shadow: 0 5px 15px rgba(0,0,0,.1);
     overflow: hidden;
     cursor: pointer;
